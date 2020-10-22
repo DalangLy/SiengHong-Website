@@ -1,0 +1,136 @@
+/*Start Header Style*/
+#d_header{
+    width: 100%;
+    padding: 1.3% 3%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#d_header_container{
+    width: 100%;
+    position: relative;
+}
+#d_header_logo_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#d_header_logo{
+    width: 20%;
+    margin: 0 2%;
+    z-index: 10;/*to make logo infront of menu*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.logo_side_line{
+    width: 40%;
+    height: 2px;
+    background: /* gradient can be an image */
+        -webkit-gradient(linear, right top, left top, from(#CAB67A),color-stop(#AF9B5F), color-stop(#FFF1C0),color-stop(#A79250), to(#9B7D4F));
+    background: /* gradient can be an image */
+        -o-linear-gradient(right, #CAB67A,#AF9B5F, #FFF1C0,#A79250, #9B7D4F);
+    background: /* gradient can be an image */
+        linear-gradient(to left, #CAB67A,#AF9B5F, #FFF1C0,#A79250, #9B7D4F);
+    background-size:100% 5px ; /*if linear-gradient, we need to resize it*/
+}
+
+#d_header_menu_container{
+    height: 50%;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+#header_social_icon a{
+    margin: 0 0.6vw;
+}
+#header_social_icon a:first-child{
+    margin-left: 0;
+}
+.header_social_icon{
+    vertical-align: middle;
+    width: 1.6vw;
+}
+#mobile_hamburger_button{
+    display: none;
+}
+#desktop_header_language_switcher_container{
+    /*margin-right: 2vw;*/
+}
+#header_search_and_language_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.language_active{
+    background: linear-gradient(to left, #CAB67A,#AF9B5F, #FFF1C0,#A79250, #9B7D4F);
+    background-size:100% 5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*End Header Style*/
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1279px){/*tablet*/
+    #d_header_logo{
+        margin: 10px 2%;
+    }
+    .header_social_icon{
+        width: 2.5vw;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape){/*phone landscape*/
+
+}
+@media only screen and (max-width: 480px){/*phone portrait*/
+    #d_header{
+        padding: 3% 4%;
+    }
+    #d_header_logo{
+        width: 30%;
+        margin: 0 2%;
+    }
+    .logo_side_line{
+        width: 20%;
+        height: 1.3px;
+    }
+    #d_header_logo_container .logo_side_line:first-child{/*new code*/
+        width: 10%;
+    }
+    #header_social_icon .hsi:nth-child(1), #header_social_icon .hsi:nth-child(2), #header_social_icon .hsi:nth-child(5){/*new code*/
+        display: none;
+    }
+    .header_social_icon{/*new code*/
+        width: 6vw;
+    }
+    #header_social_icon .hsi:nth-child(3){/*new code*/
+        margin-left: 0;
+    }
+    #header_social_icon .hsi:nth-child(4){/*new code*/
+        margin-right: 0;
+    }
+    #d_header_menu_container{
+        height: 100%;
+    }
+    #desktop_header_language_switcher_container{
+        display: none;
+    }
+    /*#header_social_icon{
+        display: none;
+    }*/
+    #mobile_hamburger_button{
+        display: block;
+    }
+}

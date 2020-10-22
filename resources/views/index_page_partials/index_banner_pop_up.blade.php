@@ -14,7 +14,7 @@
 </div>
 
 <script>
-    //$('#exampleModal').modal('show')
+    $('#exampleModal').modal('show')
 </script>
 
 

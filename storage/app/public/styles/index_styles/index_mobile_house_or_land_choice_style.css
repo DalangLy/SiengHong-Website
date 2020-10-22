@@ -1,0 +1,93 @@
+#mobile_land_and_house > *{
+    display: none;
+}
+#mobile_land_and_house_house{
+    background: rgba(1,109,95,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(1,109,95,1)), color-stop(29%, rgba(2,99,89,1)), color-stop(64%, rgba(8,92,74,1)), color-stop(100%, rgba(6,75,55,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#016d5f', endColorstr='#064b37', GradientType=1 );
+}
+#mobile_land_and_house_land{
+    background: rgba(135,106,96,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(135,106,96,1)), color-stop(29%, rgba(133,103,92,1)), color-stop(64%, rgba(128,85,69,1)), color-stop(100%, rgba(122,79,65,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#876a60', endColorstr='#7a4f41', GradientType=1 );
+}
+.mobile_land_and_house_icon_container{
+    position: absolute;
+    width: 20%;
+    color: white;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: mobileLandAndHouseContainerAnim 1s infinite linear alternate;
+    -o-animation: mobileLandAndHouseContainerAnim 1s infinite linear alternate;
+    animation: mobileLandAndHouseContainerAnim 1s infinite linear alternate;
+}
+@keyframes mobileLandAndHouseContainerAnim{
+    from{
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to{
+        -webkit-transform: translate(-50%, -50%) scale(1.1);
+        -moz-transform: translate(-50%, -50%) scale(1.1);
+        -ms-transform: translate(-50%, -50%) scale(1.1);
+        -o-transform: translate(-50%, -50%) scale(1.1);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+@-webkit-keyframes mobileLandAndHouseContainerAnim{
+    from{
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to{
+        -webkit-transform: translate(-50%, -50%) scale(1.1);
+        -moz-transform: translate(-50%, -50%) scale(1.1);
+        -ms-transform: translate(-50%, -50%) scale(1.1);
+        -o-transform: translate(-50%, -50%) scale(1.1);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+.mobile_land_and_house_icon_title{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 30vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px){/*tablet*/
+
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape){/*phone landscape*/
+
+}
+@media only screen and (max-width: 480px){/*phone portrait*/
+    #mobile_land_and_house > *{
+        display: block;
+    }
+}

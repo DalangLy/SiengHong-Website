@@ -1,0 +1,8 @@
+#d_sign_up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}

@@ -1,0 +1,193 @@
+/*Start Gallery Style*/
+#d_project{
+    width: 100%;
+    padding: 3% 4%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#d_project_container{
+    width: 100%;
+}
+#d_project_title_container{
+    display: inline-block;
+}
+#d_project_title{
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to left, #CAB67A,#AF9B5F, #FFF1C0,#A79250, #9B7D4F);
+    background-size:100% 5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#d_project_title_border{
+    height: 0.2vw;
+    width: 40%;
+    background: -webkit-gradient(linear, right top, left top, from(#CAB67A),color-stop(#AF9B5F), color-stop(#FFF1C0),color-stop(#A79250), to(#9B7D4F));
+    background: -o-linear-gradient(right, #CAB67A,#AF9B5F, #FFF1C0,#A79250, #9B7D4F);
+    background: linear-gradient(to left, #CAB67A,#AF9B5F, #FFF1C0,#A79250, #9B7D4F);
+    background-size:100% 5px;
+    -webkit-transform: translateY(-0.3vw);
+    -moz-transform: translateY(-0.3vw);
+    -ms-transform: translateY(-0.3vw);
+    -o-transform: translateY(-0.3vw);
+    transform: translateY(-0.3vw);
+}
+#project_bottom_layout{
+    margin: 3% 0;
+}
+#project_choice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 5%;
+}
+.project_choice_item_container_transparent{
+    width: 100%;
+    margin: 0 1%;
+    height: 40vw;/*responsive*/
+    -webkit-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    position: relative;
+}
+.project_choice_item_image_container{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.project_choice_item_image{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border: 1px solid #064B38;
+    -ms-filter: blur(0);
+    filter: blur(0);
+}
+.project_choice_item_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 2;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.project_choice_item_home_overlay_color{
+    background: rgba(1,109,95,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(1,109,95,1)), color-stop(29%, rgba(2,99,89,1)), color-stop(64%, rgba(8,92,74,1)), color-stop(100%, rgba(6,75,55,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(1,109,95,1) 0%, rgba(2,99,89,1) 29%, rgba(8,92,74,1) 64%, rgba(6,75,55,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#016d5f', endColorstr='#064b37', GradientType=1 );
+}
+.project_choice_item_land_overlay_color{
+    /*background: rgba(115,115,115,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(115,115,115,1) 0%, rgba(98,99,99,1) 29%, rgba(92,92,92,1) 64%, rgba(61,66,65,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(115,115,115,1)), color-stop(29%, rgba(98,99,99,1)), color-stop(64%, rgba(92,92,92,1)), color-stop(100%, rgba(61,66,65,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(115,115,115,1) 0%, rgba(98,99,99,1) 29%, rgba(92,92,92,1) 64%, rgba(61,66,65,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(115,115,115,1) 0%, rgba(98,99,99,1) 29%, rgba(92,92,92,1) 64%, rgba(61,66,65,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(115,115,115,1) 0%, rgba(98,99,99,1) 29%, rgba(92,92,92,1) 64%, rgba(61,66,65,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(115,115,115,1) 0%, rgba(98,99,99,1) 29%, rgba(92,92,92,1) 64%, rgba(61,66,65,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#3d4241', GradientType=1 );*/
+
+    background: rgba(135,106,96,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(135,106,96,1)), color-stop(29%, rgba(133,103,92,1)), color-stop(64%, rgba(128,85,69,1)), color-stop(100%, rgba(122,79,65,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(135,106,96,1) 0%, rgba(133,103,92,1) 29%, rgba(128,85,69,1) 64%, rgba(122,79,65,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#876a60', endColorstr='#7a4f41', GradientType=1 );
+}
+.project_choice_item_icon_container{
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.project_choice_item_icon{
+    width: 100%;
+}
+.project_choice_item_icon_title{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 2.5vw;
+    color: white;
+    width: 15vw;
+    text-align: center;
+    margin-top: 1vw;
+}
+.project_choice_item_image_container:hover{
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+}
+.project_choice_item_image_container:hover .project_choice_item_overlay{
+    opacity: 1;
+}
+/*End Gallery Style*/
+@media only screen and (min-width: 768px) and (max-width: 1279px){/*tablet*/
+    #d_project_title_border{
+        -webkit-transform: translateY(-0.2vw);
+        -moz-transform: translateY(-0.2vw);
+        -ms-transform: translateY(-0.2vw);
+        -o-transform: translateY(-0.2vw);
+        transform: translateY(-0.2vw);
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape){/*phone landscape*/
+    #d_project{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){/*phone portrait*/
+    #d_project{
+        display: none;
+    }
+}

@@ -1,0 +1,114 @@
+#promotion_section{
+    background-color: #848484;
+}
+#promotion_section_clip{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(7vw 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 7vw);
+    -webkit-clip-path: polygon(7vw 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 7vw);
+}
+#promotion_container{
+    z-index: 3;
+    padding: 2% 4%;
+}
+#promotion_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(200,200,200,0.9);
+}
+.promotion_item{
+    background-color: #f7f7f7;
+    perspective: 500px;
+    border: 1px solid rgba(0,0,0,0.4);
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+.promotion_item:hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 1vw 1vw 1.5vw rgba(0,0,0,0.3);
+    -moz-box-shadow: 1vw 1vw 1.5vw rgba(0,0,0,0.3);
+    box-shadow: 1vw 1vw 1.5vw rgba(0,0,0,0.3);
+}
+#yellow_balloon{
+    left: 31%;
+    top: 9%;
+    width: 8vw;
+}
+.gold_balloon_floating_up{
+    -webkit-animation: goldBalloonMoveUpAnim 5s forwards linear;
+    -o-animation: goldBalloonMoveUpAnim 5s forwards linear;
+    animation: goldBalloonMoveUpAnim 5s forwards linear;
+}
+#promotion_title{
+    font-size: 3vw;
+    color: #044B38;
+    margin: 0;
+    padding: 0.7vw 0;
+}
+#promotion_title_border{
+    width: 50%;
+    height: 0.2vw;
+    background-color: #044B38;
+    -webkit-transform: translateY(-0.3vw);
+    -moz-transform: translateY(-0.3vw);
+    -ms-transform: translateY(-0.3vw);
+    -o-transform: translateY(-0.3vw);
+    transform: translateY(-0.3vw);
+}
+#green_balloon{
+    left: 26%;
+    top: 25%;
+    width: 8vw;
+}
+.green_balloon_floating_up{
+    -webkit-animation: greenBalloonMoveUpAnim 4s forwards linear;
+    -o-animation: greenBalloonMoveUpAnim 4s forwards linear;
+    animation: greenBalloonMoveUpAnim 4s forwards linear;
+}
+@keyframes greenBalloonMoveUpAnim{
+     0%{
+         top: 25%;
+         opacity: 1;
+     }
+     90%{
+         opacity: 1;
+     }
+     100%{
+         opacity: 0;
+         top: -100%;
+     }
+ }
+@keyframes goldBalloonMoveUpAnim{
+    0%{
+        top: 9%;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: -100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px){/*tablet*/
+    #promotion_title{
+        font-size: 5vw;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape){/*phone landscape*/
+
+}
+@media only screen and (max-width: 480px){/*phone portrait*/
+    #promotion_section{
+        display: none;
+    }
+}

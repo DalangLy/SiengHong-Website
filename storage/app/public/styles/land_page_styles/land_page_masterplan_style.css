@@ -1,0 +1,44 @@
+#land_page_masterplan{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#land_page_masterplan_container{
+    width: 100%;
+}
+#land_page_masterplan_title_container{
+    display: inline-block;
+}
+#land_page_masterplan_title{
+    font-size: 40px;
+    color: #000000;
+}
+#land_page_masterplan_title_border{
+    width: 50%;
+    height: 5px;
+    background-color: #000000;
+}
+#land_page_masterplan_image{
+    width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px){/*tablet*/
+
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape){/*phone landscape*/
+
+}
+@media only screen and (max-width: 480px){/*phone portrait*/
+    #land_page_masterplan{
+        padding: 20px;
+    }
+    #land_page_masterplan_title{
+        font-size: 28px;
+    }
+    #land_page_masterplan_title_border{
+        height: 3px;
+    }
+}
