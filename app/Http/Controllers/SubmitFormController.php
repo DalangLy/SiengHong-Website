@@ -24,23 +24,7 @@ class SubmitFormController extends Controller
         $data['email'] = $request->email;
         $data['land_or_house'] = $request->landOrHouseValue;
 
-//        Mail::to([
-//                'dalangly@gmail.com',
-//                'dalangly76746@gmail.com',
-//                'dalang@oxygenkh.com',
-//                'panharith@oxygenkh.com',
-//                'Mary@oxygenkh.com',
-//                'rithychan@oxygenkh.com',
-//                'Narak@oxygenkh.com',
-//                'vichhai@oxygenkh.com',
-//                'SaleSiengHong@gmail.com',
-//            ]
-//        )->send(new SHMail($data));
-
-        Mail::to([
-                'dalangly@gmail.com',
-                'dalangly76746@gmail.com',
-                ]
+        Mail::to(['SaleSiengHong@gmail.com']
         )->send(new SHMail($data));
 
         //Mail::to('dalangly@gmail.com')->send(new SHMail($data));
